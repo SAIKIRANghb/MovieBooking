@@ -80,6 +80,7 @@ const MovieSeatBooking = (props) => {
               'Content-Type': 'application/json'
             }
           });
+          
           const theatreData = await theatreRes.json();
           setTheatreName(theatreData.theatreName)
           

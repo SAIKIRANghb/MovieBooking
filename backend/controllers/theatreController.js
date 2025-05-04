@@ -14,8 +14,9 @@ exports.createTheatre = async (req, res) => {
     } catch (error) {
       res.status(400).send(error);
     }
-  };
+};
   
+
 exports.getTheatres = async (req, res) => {
   try {
     const theatres = await Theatre.find();
