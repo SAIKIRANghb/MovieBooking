@@ -24,7 +24,7 @@ exports.createScreen = async (req, res) => {
       theatre: theatreId,
       validSeats
     });
-
+    await screen.save();
     res.status(201).send(screen);
   } catch (error) {
     res.status(400).send({ message: 'Error creating screen', error });
